@@ -1,0 +1,10 @@
+{
+  "name": "notification-app-be",
+  "version": "1.0.0",
+  "description": "Backend for notification app",
+  "main": "priorityInbox.js",
+  "type": "module",
+  "dependencies": {
+    "logging-middleware": "file:../logging-middleware"
+  }
+}

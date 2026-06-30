@@ -1,0 +1,62 @@
+[
+  {
+    "ID": "4b15adc5-774b-4243-9e57-c4b70af0b53d",
+    "Type": "Placement",
+    "Message": "Alphabet Inc. Class C hiring",
+    "Timestamp": "2026-06-30 07:58:31"
+  },
+  {
+    "ID": "0cb01ef0-54ea-4197-b397-bff4eaaa8e9f",
+    "Type": "Placement",
+    "Message": "Marriott International Inc. hiring",
+    "Timestamp": "2026-06-30 05:01:21"
+  },
+  {
+    "ID": "c130eda3-8c8b-4358-a895-da652eae3051",
+    "Type": "Placement",
+    "Message": "Amgen Inc. hiring",
+    "Timestamp": "2026-06-29 21:01:55"
+  },
+  {
+    "ID": "14f93d00-ab4e-4613-b485-960ce839abd2",
+    "Type": "Placement",
+    "Message": "Microsoft Corporation hiring",
+    "Timestamp": "2026-06-29 13:30:13"
+  },
+  {
+    "ID": "1b047782-f69d-429c-aa71-3a800e088eaa",
+    "Type": "Placement",
+    "Message": "Booking Holdings Inc. hiring",
+    "Timestamp": "2026-06-29 12:28:48"
+  },
+  {
+    "ID": "cab96e93-361e-435d-95ba-e98ff02d590d",
+    "Type": "Result",
+    "Message": "project-review",
+    "Timestamp": "2026-06-30 04:57:57"
+  },
+  {
+    "ID": "17378da8-d6c6-47c1-a9d2-0c1238f675eb",
+    "Type": "Result",
+    "Message": "external",
+    "Timestamp": "2026-06-30 04:27:06"
+  },
+  {
+    "ID": "4771837a-db7b-44b4-9d76-91efa0c5670c",
+    "Type": "Result",
+    "Message": "internal",
+    "Timestamp": "2026-06-30 01:01:04"
+  },
+  {
+    "ID": "6a49bf2e-b199-4f52-b842-ec9ffc97c6ae",
+    "Type": "Result",
+    "Message": "end-sem",
+    "Timestamp": "2026-06-29 22:31:38"
+  },
+  {
+    "ID": "001852f2-2a8e-48fe-aea6-82562e8b17a1",
+    "Type": "Result",
+    "Message": "internal",
+    "Timestamp": "2026-06-29 19:28:14"
+  }
+]
