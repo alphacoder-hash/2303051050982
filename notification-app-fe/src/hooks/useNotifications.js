@@ -1,20 +1,41 @@
-import { useState, useEffect } from "react";
-import { fetchNotifications } from "../apis/notifications";
+import { useState, useEffect } from 'react';
+import { fetchNotifications } from '../api/notifications';
+import { Log } from 'logging-middleware';
 
-export function useNotifications() {
-  const [notifications, setNotifications] = useState([]);
-  const [total, setTotal] = useState(0);
+export function useNotifications(page, limit, type) {
+    const [notifications, setNotifications] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
-  useEffect(() => {
-    const load = async () => {
-      const data = await fetchNotifications();
-      setNotifications(data.notifications ?? []);
-    };
+    useEffect(() => {
+        let isMounted = true;
 
-    load();
-  }, [notifications]);
+        const loadNotifications = async () => {
+            setLoading(true);
+            setError(null);
+            try {
+                await Log("frontend", "info", "hook", `useNotifications hook running with page=${page}`);
+                const data = await fetchNotifications(page, limit, type);
+                if (isMounted) {
+                    setNotifications(data);
+                }
+            } catch (err) {
+                if (isMounted) {
+                    setError(err.message);
+                }
+            } finally {
+                if (isMounted) {
+                    setLoading(false);
+                }
+            }
+        };
 
-  const totalPages = 0;
+        loadNotifications();
 
-  return { notifications, total, totalPages, loading: false, error: true };
+        return () => {
+            isMounted = false;
+        };
+    }, [page, limit, type]);
+
+    return { notifications, loading, error };
 }
